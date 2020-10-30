@@ -21,11 +21,7 @@ public class Algorithms1 {
         return names[rand.nextInt(names.length)];
     }
     // TODO 3 - Skriv en test til randomBoyName() metoden HINT: Se metoden exampleOfPredictableRandomNumber() for at se, hvordan du kan lave et tilfældigt nummer som er altid det samme (til test)
-    private static void exampleOfRandomBoyNames() {
-        for (int i = 0; i < 10; i++) {
-            System.out.println(randomBoyName());
-        }
-    }
+
     // TODO 4 - Skriv en randomGirlName() metode i Algorithms1, som returnerer et tilfældigt pigenavn fra Data klassen
 
     public static String randomGirlName(){
@@ -61,6 +57,11 @@ public class Algorithms1 {
         exampleOfPredictableRandomNumber();
         exampleOfRandomBoyNames();
 
+    }
+    private static void exampleOfRandomBoyNames() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println(randomBoyName());
+        }
     }
 
     private static void exampleOfPredictableRandomNumber() {
