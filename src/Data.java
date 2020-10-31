@@ -21,6 +21,8 @@ public class Data {
         randomNumbers(10, 10);
     }
     // n = hvor mange gange vores for if loop skal køre, max = det højeste tal
+    private String [] randomLetters = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","x","y","z","æ","ø","å"};
+    public boolean coinFlip;
 
     private static void randomNumbers(int n, int max) {
         System.out.print("{");
@@ -35,8 +37,12 @@ public class Data {
     public String[] getRandomDrengeNavne() {
         return randomDrengeNavne;
     }
-
     public String[] getRandomPigeNavne(){
         return randomPigeNavne;
+    }
+    public String[] getRandomLetters(){return randomLetters;}
+
+    public int[] getRandomNumbers1000() {
+        return randomNumbers1000;
     }
 }

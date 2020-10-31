@@ -35,9 +35,25 @@ public class Algorithms1 {
     // TODO 6 - Skriv en test til randomName() metoden
 
     // TODO 7 - Skriv en random bogstavs-generator metode (du kan tage udgangspunkt i randomNumbers() i Data)
+    public String randomLetters(){
+        String[] letters;
+        letters = new Data().getRandomLetters();
+        return letters[rand.nextInt(letters.length)];
+    }
+    // TODO 8 - Skriv en  plat eller krone generator metode (plat er boolean true og krone er boolean false)
+    public String randomCoinFlip(){
 
-    // TODO 8 - Skriv en  plet eller krone generator metode (plet er boolean true og krone er boolean false)
+        boolean coinFlip = new Data().coinFlip;
+        String coinFlipName = null;
 
+        coinFlip = rand.nextBoolean();
+         if (coinFlip == true)
+             coinFlipName = "Plat";
+         else if (coinFlip == false)
+             coinFlipName = "Krone";
+
+         return coinFlipName;
+    }
     public static void main(String[] args) {
         exampleOfPredictableRandomNumber();
 

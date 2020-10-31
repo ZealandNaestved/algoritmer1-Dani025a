@@ -16,4 +16,17 @@ class Algorithms1Test {
         a.rand.setSeed(5);
         assertEquals("Gin", a.randomGirlName());
     }
+    @Test
+    void randomLetters() {
+        Algorithms1 a = new Algorithms1();
+        a.rand.setSeed(5);
+        assertEquals("y", a.randomLetters());
+    }
+    @Test
+    void randomCoinFlip() {
+        Algorithms1 a = new Algorithms1();
+        a.rand.setSeed(1);
+        assertEquals("Plat", a.randomCoinFlip());
+    }
+
 }
